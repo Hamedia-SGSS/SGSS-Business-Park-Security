@@ -1,35 +1,94 @@
 .footer {
   background: var(--color-dark);
-  padding: 40px 0;
+  padding: 80px 0 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footerInner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  text-align: center;
+  gap: 48px;
 }
 
-.footerBrand {
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.footerBrandCol {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
 }
 
-.footerBrandName {
-  font-size: 15px;
+.logoLink {
+  display: inline-block;
+}
+
+.logoImg {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brandText {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.footerLinksCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+}
+
+.colTitle {
+  font-size: 14px;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.footerBrandTag {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.4);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 2px;
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLink {
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color var(--transition), transform var(--transition);
+  display: inline-block;
+}
+
+.footerLink:hover {
+  color: var(--color-gold);
+  transform: translateX(2px);
+}
+
+.footerBottom {
+  width: 100%;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerCopy {
@@ -37,47 +96,16 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
-.footerLinksContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
+/* Responsive Grid */
+@media (min-width: 576px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.footerLinksRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  column-gap: 16px;
-  row-gap: 8px;
-}
-
-.separator {
-  color: var(--color-gold);
-  font-size: 13px;
-  pointer-events: none;
-}
-
-
-
-.footerLink {
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.55);
-  transition: color var(--transition);
-}
-
-.footerLink:hover {
-  color: var(--color-gold);
-}
-
-.logoImg {
-  border-radius: 8px;
-  object-fit: contain;
-  height: 80px;
-  width: auto;
+@media (min-width: 992px) {
+  .footerGrid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+  }
 }
