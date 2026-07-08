@@ -45,12 +45,12 @@ export default function BusinessParkSecurityPage() {
       <section className={styles.hero} id="hero">
         <div className={styles.heroBg}>
           <Image
-            src="/business_park_hero.png"
+            src="/business_park_hero.webp"
             alt="Secure Guard officer standing in front of a sleek modern business park at twilight"
             fill
             className={styles.heroBgImg}
             priority
-            quality={90}
+            unoptimized
           />
           <div className={styles.heroOverlay} />
         </div>
@@ -137,12 +137,13 @@ export default function BusinessParkSecurityPage() {
           <div className={styles.addonGrid}>
             <div className={styles.addonImageCol}>
               <Image 
-                src="/business_park_patrol.png" 
+                src="/business_park_patrol.webp" 
                 alt="Secure Guard officer patrolling business park corporate campus" 
                 width={600} 
                 height={500} 
                 className={styles.addonImage} 
                 style={{ objectFit: 'cover' }}
+                unoptimized
               />
             </div>
             <div className={styles.addonContent}>
