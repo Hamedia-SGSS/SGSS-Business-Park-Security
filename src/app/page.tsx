@@ -45,7 +45,7 @@ export default function BusinessParkSecurityPage() {
       <section className={styles.hero} id="hero">
         <div className={styles.heroBg}>
           <Image
-            src="/business_park_hero.webp"
+            src="https://cms.secureguardservices.com/wp-content/uploads/2026/09/buspark.png"
             alt="Secure Guard officer standing in front of a sleek modern business park at twilight"
             fill
             className={styles.heroBgImg}
@@ -137,7 +137,7 @@ export default function BusinessParkSecurityPage() {
           <div className={styles.addonGrid}>
             <div className={styles.addonImageCol}>
               <Image 
-                src="/business_park_patrol.webp" 
+                src="https://cms.secureguardservices.com/wp-content/uploads/2026/09/bp1.png" 
                 alt="Secure Guard officer patrolling business park corporate campus" 
                 width={600} 
                 height={500} 
