@@ -6,16 +6,16 @@ import { PreFooterCTA } from "@/components/PreFooterCTA";
 
 // Reusable icons for situations and fits
 const situations = [
-  { icon: "🚶", title: "After-Hours Trespassing", desc: "Deterring unauthorized individuals from loitering or sleeping on property boundaries after business hours." },
-  { icon: "🚗", title: "Vehicle Break-ins", desc: "Patrolling shared parking structures and open lots to prevent theft and break-ins." },
-  { icon: "🎨", title: "Vandalism", desc: "Preventing graffiti, property damage, and destruction of facilities during low-traffic periods." },
-  { icon: "🅿️", title: "Unauthorized Parking", desc: "Enforcing parking regulations, monitoring fire lanes, and coordinating towing of unauthorized vehicles." },
-  { icon: "👤", title: "Suspicious Persons", desc: "Identifying, questioning, and politely escorting unauthorized individuals off the premises." },
-  { icon: "🔑", title: "Tenant Lockouts & Access", desc: "Assisting employees, vendors, and tenants with verified access and lockout resolution." },
-  { icon: "🚨", title: "Alarm Response", desc: "Providing rapid physical response to security and fire alarms to assess threats and secure areas." },
-  { icon: "🚚", title: "Vendor Access Issues", desc: "Managing check-ins, verifying authorizations, and directing vendor vehicles after hours." },
-  { icon: "🌌", title: "Parking Lot Safety", desc: "Conducting visible patrols to ensure the safety of employees and visitors walking to their cars." },
-  { icon: "📋", title: "Property Damage Reports", desc: "Conducting thorough investigations and preparing detailed incident reports for property managers." },
+  { icon: "🚶", title: "After-Hours Trespassing", desc: "Deterring unauthorized after-hours activity and trespassing on property boundaries after business hours." },
+  { icon: "🚗", title: "Vehicle Break-ins", desc: "Patrolling shared parking structures and open lots to help deter theft and break-ins." },
+  { icon: "🎨", title: "Vandalism", desc: "Deterring graffiti, property damage, and vandalism of facilities during low-traffic periods." },
+  { icon: "🅿️", title: "Unauthorized Parking", desc: "Document parking violations and coordinate authorized towing when included in site post orders." },
+  { icon: "👤", title: "Suspicious Persons", desc: "Observe and report concerning behavior, request that unauthorized persons leave when appropriate, and escalate according to client policy." },
+  { icon: "🔑", title: "Tenant Lockouts & Access", desc: "Assist with verified access requests only under written client authorization." },
+  { icon: "🚨", title: "Alarm Response", desc: "Alarm assessment and escalation under the agreed response plan, with mobile dispatch available when included or contracted separately." },
+  { icon: "🚚", title: "Vendor Access Issues", desc: "Managing check-ins, verifying authorizations, and directing vendor vehicles after hours per site procedures." },
+  { icon: "🌌", title: "Parking Lot Safety", desc: "Conducting visible patrols to support the safety of employees and visitors walking to their vehicles." },
+  { icon: "📋", title: "Property Damage Reports", desc: "Document observed conditions, preserve incident details, and share reports with property management." },
 ];
 
 const properties = [
@@ -29,10 +29,10 @@ const properties = [
 ];
 
 const coverageOptions = [
-  { service: "Business Hours Support", schedule: "Mon - Fri Day", desc: "Monitoring access points, managing visitor logs, and assisting tenants and deliveries." },
-  { service: "Overnight & After-Hours Patrols", schedule: "6 PM - 6 AM Daily", desc: "Dedicated physical patrols and building lock-ups during vacant periods to deter trespassing and break-ins." },
-  { service: "Weekend & Holiday Coverage", schedule: "24/7 Focus", desc: "Extended monitoring when the campus is completely closed, ensuring property safety and facility checks." },
-  { service: "Alarm & Incident Response", schedule: "On-Call / Flexible", desc: "Fast dispatch to respond to alarm triggers, property damage, or emergency situations." },
+  { service: "Business Hours Support", schedule: "Sample: Mon - Fri Day", desc: "Monitoring access points, managing visitor logs, and assisting tenants and deliveries as defined by the service agreement." },
+  { service: "Overnight & After-Hours Patrols", schedule: "Sample: 6 PM - 6 AM", desc: "Scheduled physical patrols and building lock-up checks during vacant periods to help deter trespassing and break-ins (hours determined by agreement)." },
+  { service: "Weekend & Holiday Coverage", schedule: "Sample: Weekend / Custom", desc: "Scheduled property checks and incident reporting during agreed coverage hours when the campus is closed." },
+  { service: "Alarm & Incident Response", schedule: "By Agreement / Contracted", desc: "Alarm assessment and escalation under the agreed response plan, with mobile dispatch available when included or contracted separately." },
 ];
 
 export default function BusinessParkSecurityPage() {
@@ -64,7 +64,7 @@ export default function BusinessParkSecurityPage() {
               Secure Multi-Tenant Properties, Parking Areas, Offices, <span className={styles.heroTitleAccent}>and After-Hours Activity</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Secure Guard Security Services delivers responsive, de-escalation-focused protection for commercial properties. Protect your tenants, secure your parking structures, and ensure smooth after-hours operations.
+              Secure Guard Security Services delivers responsive, de-escalation-focused security for commercial properties. Support tenant safety and business operations with professional patrols, access support, and incident reporting.
             </p>
             <div className={styles.heroCtas}>
               <a 
@@ -112,7 +112,7 @@ export default function BusinessParkSecurityPage() {
             <div className={styles.whyCards}>
               {[
                 { icon: "🚗", title: "Vehicle Break-ins", desc: "Open parking structures and lots are prime targets for vehicle break-ins and auto theft." },
-                { icon: "🚶", title: "After-Hours Trespassing", desc: "Unoccupied corporate areas are susceptible to loitering, vagrancy, and vandalism after closing." },
+                { icon: "🚶", title: "After-Hours Trespassing", desc: "Unoccupied corporate areas are susceptible to unauthorized after-hours activity, trespassing, and vandalism after closing." },
                 { icon: "👤", title: "Access Control", desc: "Managing vendor access, delivery traffic, and diverse visitor types without bottlenecks." },
                 { icon: "🛠️", title: "Property Damage", desc: "Vandalism, graffiti, and facility damage that can occur during low-traffic night or weekend hours." },
               ].map((c) => (
@@ -152,10 +152,10 @@ export default function BusinessParkSecurityPage() {
                 Visible Patrols & <span className={styles.titleAccent}>Professional Corporate Security</span>
               </h2>
               <p className={styles.bodyText}>
-                Secure Guard provides business park security officers, mobile patrols, parking lot monitoring, access control, tenant support, lock-up checks, alarm response, and incident reporting.
+                Secure Guard provides business park security officers, mobile patrols, parking lot monitoring, access control, tenant support, lock-up checks, alarm assessment, and incident reporting, with standing guards and mobile patrol services tailored to your service agreement.
               </p>
               <p className={styles.bodyText}>
-                Our officers are trained to represent your property professionally, assist visitors, support property managers, resolve complaints, and de-escalate situations with ease. We align our services to protect your brand and assets.
+                Our officers are trained to represent your property professionally, assist visitors, support property managers, document incidents, and de-escalate situations in accordance with site post orders.
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function BusinessParkSecurityPage() {
             </h2>
           </div>
           <p className={styles.bodyTextCenteredLight}>
-            Coverage can be scheduled during business hours, evenings, overnight, weekends, or high-risk periods when offices are closed. We align our security presence with your tenants&apos; operational schedules.
+            Sample schedules are shown below. Coverage hours, patrol frequency, and staffing levels are determined by your property&apos;s service agreement.
           </p>
 
           {/* Coverage Options Table */}
@@ -211,7 +211,7 @@ export default function BusinessParkSecurityPage() {
                 What This Means <span className={styles.titleAccentGold}>for the Client</span>
               </h2>
               <p className={styles.bodyTextLight}>
-                By deploying Secure Guard, you establish a reliable security presence that supports both property managers and tenants, reduces property damage, and ensures a professional environment.
+                By deploying Secure Guard, you establish a reliable security presence that supports both property managers and tenants, helps deter property damage, and supports a professional campus environment.
               </p>
             </div>
             <div className={styles.opsFeatures}>
